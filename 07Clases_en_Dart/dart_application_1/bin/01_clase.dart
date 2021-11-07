@@ -2,11 +2,11 @@
 import 'clases/persona.dart';
 
 main() {
-  final Persona p1 = new Persona();
-  p1
-    ..nombre = 'kuky'
-    ..edad = 28;
-  //..bio = 'la paz';
+  final Persona p1 = new Persona(1, 'kuky', 'la paz');
+  final Persona p2 = new Persona.persona30(2);
+
   print(p1); //gozu automatico con el to string xd
-  print(p1.bio);
+  p1.bio = 'cambio'; //set cambio
+  print(p1);
+  print(p2);
 }
